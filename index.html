@@ -43,18 +43,17 @@
     <div class="flexcolumn zakatResultsDiv">
             <!-- Net assets -->
         <label for="amount_netAssets">Net assets (amount eligble for Zakat)</label>
-        <input id="amount" type="text" readonly="readonly" onchange="calculateZakat()"/>
+        <input id="amount_netAssets" type="text" readonly="readonly" onchange="calculateZakat()"/>
             <!-- Zakat total -->
         <label for="amount_zakatTotal">Your Zakat Total (2.5% of net assets)</label>
-        <input id="amount_moneyYouOwe" type="text" readonly="readonly"/>
+        <input id="amount_zakatTotal" type="text" readonly="readonly"/>
 
+            <!-- Calculate Zakat Button -->
         <button id="calculateZakatButton" type="button" aria-label="Calculate Zakat" >Calculate Zakat</button>
-
     </div>
 
 
-    <script>
-        console.log("Hello world!");
-    </script>
+    <!-- Javascript Files -->
+    <script src="main.js"></script>
 </body>
 </html>
